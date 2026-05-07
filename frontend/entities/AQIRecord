@@ -1,0 +1,57 @@
+{
+  "name": "AQIRecord",
+  "type": "object",
+  "properties": {
+    "station": {
+      "type": "string",
+      "description": "Monitoring station name"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "pm25": {
+      "type": "number"
+    },
+    "pm10": {
+      "type": "number"
+    },
+    "no2": {
+      "type": "number"
+    },
+    "co": {
+      "type": "number"
+    },
+    "so2": {
+      "type": "number"
+    },
+    "temperature": {
+      "type": "number"
+    },
+    "humidity": {
+      "type": "number"
+    },
+    "wind_speed": {
+      "type": "number"
+    },
+    "aqi": {
+      "type": "number"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Good",
+        "Moderate",
+        "Poor",
+        "Very Poor",
+        "Severe"
+      ]
+    }
+  },
+  "required": [
+    "station",
+    "timestamp",
+    "aqi",
+    "category"
+  ]
+}

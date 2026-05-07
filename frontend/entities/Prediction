@@ -1,0 +1,86 @@
+{
+  "name": "Prediction",
+  "type": "object",
+  "properties": {
+    "station": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "predicted_aqi": {
+      "type": "number"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Good",
+        "Moderate",
+        "Poor",
+        "Very Poor",
+        "Severe"
+      ]
+    },
+    "pm25": {
+      "type": "number"
+    },
+    "pm10": {
+      "type": "number"
+    },
+    "no2": {
+      "type": "number"
+    },
+    "co": {
+      "type": "number"
+    },
+    "so2": {
+      "type": "number"
+    },
+    "temperature": {
+      "type": "number"
+    },
+    "humidity": {
+      "type": "number"
+    },
+    "wind_speed": {
+      "type": "number"
+    },
+    "shap_pm25": {
+      "type": "number"
+    },
+    "shap_pm10": {
+      "type": "number"
+    },
+    "shap_no2": {
+      "type": "number"
+    },
+    "shap_co": {
+      "type": "number"
+    },
+    "shap_so2": {
+      "type": "number"
+    },
+    "shap_temperature": {
+      "type": "number"
+    },
+    "shap_humidity": {
+      "type": "number"
+    },
+    "shap_wind_speed": {
+      "type": "number"
+    },
+    "shap_hour": {
+      "type": "number"
+    },
+    "model_accuracy": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "station",
+    "timestamp",
+    "predicted_aqi",
+    "category"
+  ]
+}
