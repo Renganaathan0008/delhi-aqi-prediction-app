@@ -258,7 +258,7 @@ print(f"  {len(station_list)} stations · {len(latest)} snapshots · hourly poin
 
 # ── Global SHAP summary (mean |SHAP| per feature, train sample) ───────────────
 print("\nComputing global SHAP summary …")
-explainer    = _shap.TreeExplainer(best['model'])
+explainer = shap.TreeExplainer(best['model'])
 sample_size  = min(500, len(X_train))
 rng          = np.random.default_rng(42)
 sample_idx   = rng.choice(len(X_train), sample_size, replace=False)
