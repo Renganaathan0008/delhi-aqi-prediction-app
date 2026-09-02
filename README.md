@@ -1,4 +1,4 @@
-# Delhi AQI Prediction System — Fully Local
+# Delhi AQI Prediction System 
 
 No internet required. No external APIs. Flask + React.
 
